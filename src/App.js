@@ -2,23 +2,20 @@ import React from "react";
 
 class App extends React.Component{
   state = {
-    count : 0
+    isLoading : true
   };
 
-  add = () =>{
-    this.setState( x => ({count: x.count + 1}));
-  };
-  
-  sub = () =>{
-    this.setState( x => ({count: x.count - 1})); // setstate호출시 render을 다시 호출
-  };
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({isLoading: false});
+    }, 3000);
+  }
 
   render(){
+    const { isLoading } = this.state; // this.state에서 isLoading 을 가져와서 isLoading에 저장
     return (
       <div>
-        <h1>Class coponent {this.state.count}</h1>
-        <button onClick={this.add}>+</button>
-        <button onClick={this.sub}>-</button>
+        <h1>{isLoading ? "This Page is Loading" : "Welcome!"}</h1>
       </div>
     );
   }
