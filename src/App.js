@@ -1,28 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-function Stock({ent, price}) {
-  return <div>I bought {ent} when it was {price} won</div>;
-}
+class App extends React.Component{
+  state = {
+    count : 0
+  };
 
-const companies = [
-  {id:0, title:"apple", price:10}, 
-  {id:1, title:"tesla", price:8}, 
-  {id:2, title:"samsung", price:15}
-];
+  add = () =>{
+    this.setState( x => ({count: x.count + 1}));
+  };
+  
+  sub = () =>{
+    this.setState( x => ({count: x.count - 1})); // setstate호출시 render을 다시 호출
+  };
 
-Stock.propTypes = {
-  ent: PropTypes.string.isRequired,
-  price: PropTypes.number
-};
-
-function App() {
-  return (
-    <div>
-      {companies.map(x =>
-        <Stock key={x.id} ent={x.title} price={x.price}/>)}
-    </div>
-  );
+  render(){
+    return (
+      <div>
+        <h1>Class coponent {this.state.count}</h1>
+        <button onClick={this.add}>+</button>
+        <button onClick={this.sub}>-</button>
+      </div>
+    );
+  }
 }
 
 export default App;
