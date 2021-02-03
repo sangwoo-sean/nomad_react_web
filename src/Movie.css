@@ -1,8 +1,8 @@
 .movie {
     border-radius: 5%;
-    width: 600px;
+    width: 500px;
     padding: 10px;
-    margin: 30px 15px;
+    margin: 40px 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,6 +12,7 @@
 
 .movie__data{
     width: 60%;
+    color: rgb(71, 71, 71);
 }
 
 .movie__poster img {
@@ -26,6 +27,7 @@ li {
 
 .movie__title {
     margin: 10px 5px;
+    color:black;
 }
 
 .movie__year {
@@ -38,11 +40,13 @@ li {
 
 .genres {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin-top: 0;
 }
 
 .genres__genre{
     justify-content: center;
-    margin: 0 5px; 
+    margin: 0 3px; 
+    font-size: 15px;
 }
