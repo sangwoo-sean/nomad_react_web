@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nomad_react_web/static/css/main.a4ce2a8f.chunk.css",
+    "main.css": "/nomad_react_web/static/css/main.bf233aee.chunk.css",
     "main.js": "/nomad_react_web/static/js/main.ade17205.chunk.js",
     "main.js.map": "/nomad_react_web/static/js/main.ade17205.chunk.js.map",
     "runtime-main.js": "/nomad_react_web/static/js/runtime-main.7dfad6b1.js",
@@ -8,13 +8,13 @@
     "static/js/2.83478577.chunk.js": "/nomad_react_web/static/js/2.83478577.chunk.js",
     "static/js/2.83478577.chunk.js.map": "/nomad_react_web/static/js/2.83478577.chunk.js.map",
     "index.html": "/nomad_react_web/index.html",
-    "static/css/main.a4ce2a8f.chunk.css.map": "/nomad_react_web/static/css/main.a4ce2a8f.chunk.css.map",
+    "static/css/main.bf233aee.chunk.css.map": "/nomad_react_web/static/css/main.bf233aee.chunk.css.map",
     "static/js/2.83478577.chunk.js.LICENSE.txt": "/nomad_react_web/static/js/2.83478577.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7dfad6b1.js",
     "static/js/2.83478577.chunk.js",
-    "static/css/main.a4ce2a8f.chunk.css",
+    "static/css/main.bf233aee.chunk.css",
     "static/js/main.ade17205.chunk.js"
   ]
 }
