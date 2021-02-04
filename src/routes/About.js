@@ -1,7 +1,9 @@
 import React from "react";
 
-function About() {
-    return <span>About this : nomad project</span>  
+function About(props) {
+    console.log(props)
+    return (
+    <span>About this : nomad project</span>);
 }
 
 export default About;
